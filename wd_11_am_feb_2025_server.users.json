@@ -1,0 +1,74 @@
+[{
+  "_id": {
+    "$oid": "67d29fa22703cd814ce6c3fc"
+  },
+  "name": "Prakash Singh",
+  "username": "prakashsingh12",
+  "email": "prakashkumarsingh471@gmail.com",
+  "phone": "8804058804",
+  "password": "$2b$12$cge2gTHyxgKnvEHIqx6ebeNF9fE1sH816z1Q9tTajUnxRwkymCPPm",
+  "role": "Super Admin",
+  "address": "",
+  "pin": "",
+  "city": "",
+  "state": "",
+  "otp": "704856",
+  "pic": "public\\uploads\\user\\1741970580112p16.jpg",
+  "active": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d2a0b32703cd814ce6c3fe"
+  },
+  "name": "Vikash Kumar Singh",
+  "username": "vikashsingh22",
+  "email": "vikashkumarsingh22@gmail.com",
+  "phone": "8083905558",
+  "password": "$2b$12$NrC5OSK.iWDGtIaD5DucPupFdbDdwLsQb8KGrVTMs9Fuq0GVicZ8.",
+  "address": "A-43 Sector 16, Noida",
+  "pin": "201301",
+  "city": "Noida",
+  "state": "UP",
+  "otp": "-234567",
+  "pic": "public\\uploads\\user\\1741974720439p24.jpg",
+  "active": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d2a1ba2703cd814ce6c404"
+  },
+  "name": "Akash Singh",
+  "username": "akashsingh4",
+  "email": "akashsingh4@gmail.com",
+  "phone": "8805058805",
+  "password": "$2b$12$cTfpSpONbg8aCLtIta0OoOTknAL4hUDVCzdlom91kN0uJ7QzvjkVS",
+  "address": "A-43 Sector 16, Noida",
+  "pin": "201301",
+  "city": "Noida",
+  "state": "UP",
+  "otp": "-234567",
+  "pic": "public\\uploads\\user\\1741974878343p54.jpg",
+  "active": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d465cf60a0a17eef179c54"
+  },
+  "name": "Avinash Singh",
+  "username": "avinash",
+  "email": "avinash@gmail.com",
+  "phone": "8806068806",
+  "password": "$2b$12$oDPGzfC1JRDtN1.EE2NT3.wNpqLDt9ltI7CvU7KjAiwrhi56K6SVC",
+  "role": "Admin",
+  "address": "",
+  "pin": "",
+  "city": "",
+  "state": "",
+  "otp": "-234567",
+  "pic": "",
+  "active": true,
+  "__v": 0
+}]

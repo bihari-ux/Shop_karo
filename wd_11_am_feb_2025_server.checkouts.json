@@ -1,0 +1,221 @@
+[{
+  "_id": {
+    "$oid": "67d85bc4e97bb6065b471884"
+  },
+  "user": {
+    "$oid": "67d2a0b32703cd814ce6c3fe"
+  },
+  "orderStatus": "Order is Placed",
+  "paymentMode": "COD",
+  "paymentStatus": "Pending",
+  "subtotal": 3600,
+  "shipping": 0,
+  "total": 3600,
+  "rppid": "",
+  "products": [
+    {
+      "_id": "67d85bc0e97bb6065b471858",
+      "user": {
+        "_id": "67d2a0b32703cd814ce6c3fe",
+        "name": "Vikash Kumar Singh",
+        "username": "vikashsingh22"
+      },
+      "product": {
+        "_id": "666016a27f9d2c0c4880afb6",
+        "name": "Male Jeans Regular Fit",
+        "brand": {
+          "name": "Adidas"
+        },
+        "color": "Black",
+        "size": "36",
+        "finalPrice": 225,
+        "stockQuantity": 18,
+        "pic": [
+          "public\\uploads\\product\\1717573923773different-types-of-jeans-for-men-bewakoof-blog-3-1612875476.jpg"
+        ]
+      },
+      "qty": 1,
+      "total": 225,
+      "__v": 0
+    },
+    {
+      "_id": "67d85b3ee97bb6065b4717ae",
+      "user": {
+        "_id": "67d2a0b32703cd814ce6c3fe",
+        "name": "Vikash Kumar Singh",
+        "username": "vikashsingh22"
+      },
+      "product": {
+        "_id": "6668096ade7316c1291ee496",
+        "name": "Kids Jeans Slim Fit",
+        "brand": {
+          "name": "Puma"
+        },
+        "color": "Black",
+        "size": "36",
+        "finalPrice": 3375,
+        "stockQuantity": 44,
+        "pic": [
+          "public\\uploads\\product\\1718094186389download (17).jpg"
+        ]
+      },
+      "qty": 1,
+      "total": 3375,
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-03-17T17:28:36.920Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-17T17:28:36.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d85e3e1774100bae125a88"
+  },
+  "user": {
+    "$oid": "67d2a0b32703cd814ce6c3fe"
+  },
+  "orderStatus": "Order is Placed",
+  "paymentMode": "COD",
+  "paymentStatus": "Pending",
+  "subtotal": 2960,
+  "shipping": 0,
+  "total": 2960,
+  "rppid": "",
+  "products": [
+    {
+      "_id": "67d85e331774100bae125a44",
+      "user": {
+        "_id": "67d2a0b32703cd814ce6c3fe",
+        "name": "Vikash Kumar Singh",
+        "username": "vikashsingh22"
+      },
+      "product": {
+        "_id": "6660182ea94295cf3e05934c",
+        "name": "Female Jeans Regular Fit",
+        "brand": {
+          "name": "Gucci"
+        },
+        "color": "Black",
+        "size": "32",
+        "finalPrice": 592,
+        "stockQuantity": 20,
+        "pic": [
+          "public\\uploads\\product\\171757553397490107bcbbd971b6c51fe78890de08c682d-aajeans.2x.rdeep-vertical.w245.jpg"
+        ]
+      },
+      "qty": 5,
+      "total": 2960,
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-03-17T17:39:10.332Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-17T17:39:10.332Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d85ead1774100bae125b0b"
+  },
+  "user": {
+    "$oid": "67d2a0b32703cd814ce6c3fe"
+  },
+  "orderStatus": "Delivered",
+  "paymentMode": "Net Banking",
+  "paymentStatus": "Done",
+  "subtotal": 225,
+  "shipping": 150,
+  "total": 375,
+  "rppid": "pay_Q90f11xWwMmsPQ",
+  "products": [
+    {
+      "_id": "67d85ea51774100bae125adf",
+      "user": {
+        "_id": "67d2a0b32703cd814ce6c3fe",
+        "name": "Vikash Kumar Singh",
+        "username": "vikashsingh22"
+      },
+      "product": {
+        "_id": "666016a27f9d2c0c4880afb6",
+        "name": "Male Jeans Regular Fit",
+        "brand": {
+          "name": "Adidas"
+        },
+        "color": "Black",
+        "size": "36",
+        "finalPrice": 225,
+        "stockQuantity": 18,
+        "pic": [
+          "public\\uploads\\product\\1717573923773different-types-of-jeans-for-men-bewakoof-blog-3-1612875476.jpg"
+        ]
+      },
+      "qty": 1,
+      "total": 225,
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-03-17T17:41:01.637Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-20T10:21:13.237Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67dbea6eb38a902ed6e26603"
+  },
+  "user": {
+    "$oid": "67d2a0b32703cd814ce6c3fe"
+  },
+  "orderStatus": "Order is Placed",
+  "paymentMode": "Net Banking",
+  "paymentStatus": "Pending",
+  "subtotal": 3375,
+  "shipping": 0,
+  "total": 3375,
+  "rppid": "",
+  "products": [
+    {
+      "_id": "67d860f91774100bae125b7d",
+      "user": {
+        "_id": "67d2a0b32703cd814ce6c3fe",
+        "name": "Vikash Kumar Singh",
+        "username": "vikashsingh22"
+      },
+      "product": {
+        "_id": "6668096ade7316c1291ee496",
+        "name": "Kids Jeans Slim Fit",
+        "brand": {
+          "name": "Puma"
+        },
+        "color": "Black",
+        "size": "36",
+        "finalPrice": 3375,
+        "stockQuantity": 44,
+        "pic": [
+          "public\\uploads\\product\\1718094186389download (17).jpg"
+        ]
+      },
+      "qty": 1,
+      "total": 3375,
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-03-20T10:14:06.839Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-20T10:14:06.839Z"
+  },
+  "__v": 0
+}]
