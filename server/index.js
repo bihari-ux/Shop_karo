@@ -39,7 +39,14 @@ app.get("/health", (req, res) => {
 });
 
 app.use("/api", Router);
-app.use("*", express.static(path.join(__dirname, "build")));
+
+app.get("*", (req, res, next) => {
+  if (req.path.startsWith("/api") || req.path.startsWith("/public")) {
+    return next();
+  }
+
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 const port = Number(process.env.PORT) || 8000;
 

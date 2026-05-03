@@ -59,7 +59,7 @@ export default function App() {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path='' element={<Home />} />
+                <Route path='/' element={<Home />} />
                 <Route path='/about' element={<AboutPage />} />
                 <Route path='/features' element={<FeaturesPage />} />
                 <Route path='/shop' element={<ShopPage />} />
