@@ -1,5 +1,34 @@
 # Deployment Guide
 
+## Single Render Service
+
+This repo can be deployed as one Render web service using [render.yaml](/e:/Shopkaro/Shopkaro/Ecommerce/render.yaml:1).
+
+- Render root directory: `server`
+- Build command: `npm install && npm run build`
+- Start command: `npm start`
+
+The build step installs the client, builds it, and copies the output into `server/build`, which the Express app serves.
+
+Set these environment variables on Render:
+
+- `DB_KEY`
+- `CORS_ALLOWED_ORIGINS`
+- `FRONTEND_URL`
+- `JWT_SECRET_KEY_ADMIN`
+- `JWT_SECRET_KEY_BUYER`
+- `MAIL_SENDER`
+- `MAIL_PASSWORD`
+- `SITE_NAME`
+- `RPKEYID`
+- `RPSECRETKEY`
+
+For a single-service deploy, set:
+
+- `REACT_APP_BACKEND_SERVER=` empty string
+- `CORS_ALLOWED_ORIGINS=https://your-render-service.onrender.com`
+- `FRONTEND_URL=https://your-render-service.onrender.com`
+
 ## Server
 
 Set these environment variables on your backend host:
