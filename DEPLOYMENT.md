@@ -1,0 +1,45 @@
+# Deployment Guide
+
+## Server
+
+Set these environment variables on your backend host:
+
+- `DB_KEY`
+- `PORT`
+- `CORS_ALLOWED_ORIGINS`
+- `JWT_SECRET_KEY_ADMIN`
+- `JWT_SECRET_KEY_BUYER`
+- `MAIL_SENDER`
+- `MAIL_PASSWORD`
+- `SITE_NAME`
+- `RPKEYID`
+- `RPSECRETKEY`
+
+Use [server/.env.example](/e:/Shopkaro/Shopkaro/Ecommerce/server/.env.example:1) as the template.
+
+Start command:
+
+```bash
+npm start
+```
+
+## Client
+
+Set this environment variable on your frontend host:
+
+- `REACT_APP_BACKEND_SERVER`
+
+Use [client/.env.example](/e:/Shopkaro/Shopkaro/Ecommerce/client/.env.example:1) as the template.
+
+Build command:
+
+```bash
+npm run build
+```
+
+## Notes
+
+- Backend now reads MongoDB from `DB_KEY` or `MONGODB_URI`.
+- CORS now uses `CORS_ALLOWED_ORIGINS` as a comma-separated list.
+- Product update/delete/create routes are admin-only.
+- Razorpay now reads `RPSECRETKEY` with the correct env name.
