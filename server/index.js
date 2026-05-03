@@ -7,6 +7,27 @@ const connectDB = require("./db_connect");
 const Router = require("./routes/index");
 const app = express();
 
+function normalizeResponsePayload(payload) {
+  if (Array.isArray(payload)) {
+    return payload.map(normalizeResponsePayload);
+  }
+
+  if (payload && typeof payload === "object") {
+    return Object.fromEntries(
+      Object.entries(payload).map(([key, value]) => [
+        key,
+        normalizeResponsePayload(value),
+      ])
+    );
+  }
+
+  if (typeof payload === "string" && payload.includes("\\")) {
+    return payload.replace(/\\/g, "/");
+  }
+
+  return payload;
+}
+
 const defaultOrigins = [
   "http://localhost:3000",
   process.env.RENDER_EXTERNAL_URL,
@@ -31,6 +52,21 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+app.use((req, res, next) => {
+  const originalSend = res.send.bind(res);
+
+  res.send = (body) => {
+    if (body && typeof body === "object" && !Buffer.isBuffer(body)) {
+      return originalSend(normalizeResponsePayload(body));
+    }
+
+    return originalSend(body);
+  };
+
+  next();
+});
+
 app.use("/public", express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "build")));
 
