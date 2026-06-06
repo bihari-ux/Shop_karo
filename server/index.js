@@ -58,7 +58,14 @@ app.use((req, res, next) => {
 
   res.send = (body) => {
     if (body && typeof body === "object" && !Buffer.isBuffer(body)) {
-      return originalSend(normalizeResponsePayload(body));
+      let plainBody = body;
+      try {
+        // Convert mongoose documents to plain objects first
+        plainBody = JSON.parse(JSON.stringify(body));
+      } catch (e) {
+        plainBody = body;
+      }
+      return originalSend(normalizeResponsePayload(plainBody));
     }
 
     return originalSend(body);
