@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import Chatbot from './Components/Chatbot'
 
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
@@ -132,6 +133,7 @@ export default function App() {
 
                 <Route path='/*' element={<ErrorPage />} />
             </Routes>
+            <Chatbot />
             <Footer />
         </BrowserRouter>
     )
